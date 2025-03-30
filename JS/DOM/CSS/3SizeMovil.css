@@ -1,0 +1,132 @@
+@media (max-width: 1000px) {
+    .CONTENEDOR {
+        border: solid;
+        padding: 15px;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .Contenedor1, .Contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    #usernameInput, .buttonInput, #message,
+    #recibir, .buttonInput, #nuevo {
+        margin: 10px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .CONTENEDOR {
+        border: solid;
+        padding: 15px;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .Contenedor1, .Contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    #usernameInput, .buttonInput, #message,
+    #recibir, .buttonInput, #nuevo {
+        margin: 10px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .CONTENEDOR {
+        border: solid;
+        padding: 15px;
+        width: 35%;
+        margin: 0 auto;
+    }
+    .Contenedor1, .Contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    #usernameInput, .buttonInput, #message,
+    #recibir, .buttonInput, #nuevo {
+        margin: 10px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .CONTENEDOR {
+        border: solid;
+        padding: 15px;
+        width: 45%;
+        margin: 0 auto;
+    }
+    .Contenedor1, .Contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    #usernameInput, .buttonInput, #message,
+    #recibir, .buttonInput, #nuevo {
+        margin: 10px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .CONTENEDOR {
+        border: solid;
+        padding: 15px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .Contenedor1, .Contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    #usernameInput, .buttonInput, #message,
+    #recibir, .buttonInput, #nuevo {
+        margin: 10px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .CONTENEDOR {
+        border: solid;
+        padding: 15px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .Contenedor1, .Contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    #usernameInput, .buttonInput, #message,
+    #recibir, .buttonInput, #nuevo {
+        margin: 10px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 300px) {
+    .CONTENEDOR {
+        border: solid;
+        padding: 15px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .Contenedor1, .Contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    #usernameInput, .buttonInput, #message,
+    #recibir, .buttonInput, #nuevo {
+        margin: 10px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}

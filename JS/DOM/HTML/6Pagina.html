@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/JS/DOM/CSS/6Eventos.css">
+    <title>Events</title>
+</head>
+<body>
+    <div class="Pages">
+        <a href="/JS/DOM/HTML/5Pagina.html"><button class="paginas">Pagina anterior</button></a>
+        <a href="/JS/DOM/HTML/7Pagina.html"><button class="paginas">Siguiente Pagina</button></a>
+    </div>
+    <hr>
+    <!-- onclick (1 clic) -->
+    <div class="Pages">
+        <div class="container" id="firts">Clickeame</div>
+    </div>
+    <hr>
+    <!-- ondblclick (2 click) -->
+    <div class="Pages">
+        <div class="container" id="secound">Clickeame 2 veces</div>
+    </div>
+    <hr>
+    <!-- onscroll () -->
+    <div class="Pages">
+        <textarea name="Escritura" id="thirth" placeholder="Escribe algo y luego desliza hacia abajo"></textarea>
+    </div>
+    <hr>
+    <!-- onchange () -->
+    <div class="Pages">
+        <input type="range" name="counterRange" id="range" min="0" max="100" value="50">
+        <p id="rangeP">50</p>
+    </div>
+    <hr>
+    <!-- oninput () -->
+    <div class="Pages">
+        <input id="inputo" type="text" oninput="mostrarText()" placeholder="Escribe algo">
+        <p id="texto"></p>
+    </div>
+    <hr>
+    <!-- AddEventListener () -->
+    <div class="Pages">
+        <div class="container" id="fourth">On / Off</div>
+    </div>
+    <hr>
+    <!-- RemoveEventListener () -->
+    <div class="Pages">
+        <div class="container" id="fift">Solo se puede 1 click</div>
+    </div>
+    <hr>
+    <div class="Pages">
+        <div id="container5" class="heightWidth2"></div>
+    </div>
+    <div class="caja">
+        <button id="heightWidth" class="botoncitos">height / width</button>
+        <button id="width" class="botoncitos">width</button>
+        <button id="height" class="botoncitos">height</button>
+    </div>
+    <hr>
+    <!-- touchstart, touchmove, touchend, touchcancel -->
+     <h1>Apartado para Movil</h1>
+    <div>
+        <div class="contenidoCaja6">
+            <div id="bandera" class="container" style="display: flex; flex-direction: column;">
+                <div style="background-color: yellow; width: 100%; height: 33.33%;"></div>
+                <div style="background-color: blue; width: 100%; height: 33.33%;"></div>
+                <div style="background-color: red; width: 100%; height: 33.33%;"></div>
+            </div>
+            <div id="Bbrasil" class="container">
+                <img src="/1Edit/Edit2/Img/Brasil.png" alt="" height="80px">
+            </div>
+            <div id="Cchina" class="container">
+                <img src="/1Edit/Edit2/Img/China.png" alt="" height="80px">
+            </div>
+        </div>
+        <div class="contenidoCaja6">
+            <div id="tocame" style="border: solid; width: 100%; height: 60px; align-items: center; display: flex; justify-content: center;">Tocame</div>
+        </div>
+        <div class="contenidoMensagge">
+            <h3 id="message1"></h3>
+            <h3 id="message2"></h3>
+            <h3 id="message3"></h3>
+        </div>
+        <div class="contenidoMensagge">
+            <h3 id="message4"></h3>
+        </div>
+    </div>
+    <hr>
+
+    <script src="/JS/DOM/JS/Propiedades/8Eventos.js"></script>
+</body>
+</html>

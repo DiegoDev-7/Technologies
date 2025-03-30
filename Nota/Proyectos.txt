@@ -1,0 +1,10 @@
+Ideas de proyectos y explicaciones:
+
+1.  Diseñar con HTML, CSS y JavaScript varios tipos de dispositivos como un 
+    portatil (con la interfaz de windows), tablet ((idea), que tenga un lapiz) o 
+    un celular y que cada uno tenga una funcion es decir que tenga aplicaciones, 
+    juegos, videos (YT2.0), y para cambiar cada dispositivo que sea con la ayuda 
+    de los input de listas.
+
+2.  Diseño de un ATM "si se puede añadirlo al punto 1" y con su diseño de
+    tarjeta al lado

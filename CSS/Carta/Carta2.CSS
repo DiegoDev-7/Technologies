@@ -1,0 +1,49 @@
+body {
+    border: 1px solid black;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 {
+    color: darkblue;
+    border-bottom: 1px solid darkblue;
+}
+.titulo {
+    color: darkgray;
+    font-size: large;
+    font-weight: bold;
+}
+p {
+    font-weight: 400;
+}
+li {
+    color: rgb(71, 71, 71);
+}
+li:first-child a {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+li:nth-child(2) a {
+    color: darkgoldenrod;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h5 {
+    width: 3cm;
+    margin: auto;
+    padding: 5px;
+    font-weight: 600;
+    font-size: x-large;
+    background-color: green;
+    border: medium solid green;
+    border-radius: 15px;
+    border-color: inherit;
+    text-align: center;
+}
+.lumbo {
+    color: green;  
+}
+#limbo {
+    color: white;
+}

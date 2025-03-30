@@ -1,0 +1,41 @@
+{
+    "ShopGun": "GUNARMY",
+    "TypeArms": "Fusil de asalto, Pistolas",
+    "Licence": "Active",
+    "Fusil de asalto": [
+        {
+            "nombre": ["AK47", "M4A1", "M16", "H4A1", "M4"],
+            "balas": ["m985", "m985A1", "m995"],
+            "poder": ["alto", "medio", "bajo"],
+            "puntuacion": [10, 8, 6, 4, 2, 1, 0],
+            "precio": [1000, 800, 600, 400]
+        }
+    ],
+    "Pistolas": [
+        {
+            "nombre": ["M9", "M1921", "Desert Deagle", "M1911", "G18", "G19"],
+            "balas": ["45 HS", "45 FMJ", "45 AP", "7,62 x 25 mm", "5.7 x 28 SS198"],
+            "poder": ["alto", "medio", "bajo"],
+            "puntuacion": [10, 8, 6, 4, 2, 1, 0],
+            "precio": [1000, 800, 600, 400]
+        }
+    ],
+    "Mejoras": [
+        {
+            "Silenciador": ["Max", "alto", "medio", "bajo"],
+            "Puntero de mira": ["Max", "alto", "medio", "bajo"],
+            "Cargador": ["Max", "alto", "medio", "bajo"],
+            "Precio": [150, 100, 80, 40]
+        }
+    ],
+    "Chalecos Anti Balas": [
+        {
+            "Chaleco": ["T1: 150", "T2: 250", "T3: 300", "T4: 450", "T5: 700", "T6: 1200"]
+        }
+    ],
+    "Cascos": [
+        {
+            "Caco": ["T1: 120", "T2: 200", "T3: 350", "T4: 500", "T5: 800", "T6: 1600"]
+        }
+    ]
+}

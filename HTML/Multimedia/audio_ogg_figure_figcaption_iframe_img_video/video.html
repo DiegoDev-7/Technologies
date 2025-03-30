@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!-- Elemento source puede añadir diferentes formatos de video como mp4, webm
+
+    Video   (Se utiliza para incrustar contenido de video como mp4, webm. etc...).
+
+    Source (Permite añadir varias imagenes o videos y el navegador seleccionara una según el tipo de dispositivo 
+            o navegador).
+
+    Webm (permite añadir videos o imagenes para disminuir el tamaño (kb,mb,gb) de las imagenes o video sin reducir 
+            calidad visual para permitir mejorar la velocidad de carga en las páginas web).
+    
+    track   ().
+
+    a   ().
+            
+    -->
+
+<body>
+    <video
+        controls
+        width="700"
+        height="400"
+        autoplay
+        loop
+        muted
+        poster="/Multimedia/audio_ogg_figure_figcaption_iframe_img_video/Archivos1/videoframe_15555.png"
+        preload="auto">
+        <source src="/Multimedia/audio_ogg_figure_figcaption_iframe_img_video/Archivos1/MOONDEITY X INTERWORLD - ONE CHANCE SLOWED + REVERBED (1080p, h264, youtube).mp4" type="video/mp4">
+        <source src="/Multimedia/audio_ogg_figure_figcaption_iframe_img_video/Archivos1/MOONDEITY X INTERWORLD - ONE CHANCE SLOWED + REVERBED - LOST WIDOW (youtube).webm" type="video/webm">
+        <track default kind="captions" srclang="en" src="/media/examples/friday.vtt" />
+        <p>
+            Su navegador no soporta vídeo HMTL5. Este es un
+            <a href="https://www.youtube.com/watch?v=uT-ZRioNMiQ&list=PLmCZi8LtuIySIVLNn1_3XuPeonjRXz2n3&index=95&ab_channel=LOSTWIDOW">enlace al vídeo</a> alternativo.
+        </p>
+    </video>
+</body>
+</html>

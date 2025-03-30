@@ -1,0 +1,79 @@
+/* Paginas */
+.Pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginas { 
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    border: solid white;
+    background-color: white;
+    margin: 20px 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 15px 0 #ffffff,
+    0 0 10px 0 #ffffff,
+    0 0 5px 0 #ffffff;
+    background-color: black;
+    color: white;
+    border: solid black;
+}
+.paginas:hover {
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 7px 0 #ffffff,
+    0 0 12px 0 #ffffff,
+    0 0 17px 0 #ffffff;
+    color: black;
+    background-color: white;
+    border: solid;
+}
+
+/* Clases de JS */
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+
+.inpUt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.contorno {
+    border: 3px solid;
+    padding: 5px;
+    border-radius:10px 30px 10px 30px;
+    box-shadow: 0 0 50px 5px #000000,
+    0 0 50px 5px #ff3030,
+    0 0 50px 5px #4570ff;
+    text-align: center;
+}
+.contorno:hover {
+    border: 3px solid rgba(255, 0, 0, 0.603);
+    text-align: center;
+}
+.contorno:focus {
+    border: 3px solid #f5b7b7;
+    border-style: solid;
+    outline: none;
+}
+
+.destacado::before {
+    color: red;
+    content: "China ";
+}
+
+.destacado::after {
+    color: green;
+    content: " Brasil";
+}

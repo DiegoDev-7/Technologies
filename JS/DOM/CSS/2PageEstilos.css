@@ -1,0 +1,98 @@
+body {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: #000000;
+}
+
+button { 
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    border: solid white;
+    background-color: white;
+    margin: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 15px 0 #ffffff,
+    0 0 10px 0 #ffffff,
+    0 0 5px 0 #ffffff;
+}
+
+button:hover {
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 7px 0 #ffffff,
+    0 0 12px 0 #ffffff,
+    0 0 17px 0 #ffffff;
+}
+
+.paginas {
+    background-color: black;
+    color: white;
+    border: solid black;
+}
+
+/* labels(etiquetas) "P" */
+#secret, #message, #id, #mensages2, 
+.Mensages3, .Mensages4, #web {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-decoration: solid;
+    padding: 5px;
+    color: #333;
+    background-color: white;
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 15px 0 #ffffff,
+    0 0 10px 0 #ffffff,
+    0 0 5px 0 #ffffff;
+    cursor: pointer;
+    margin: 30px 20%;
+}
+#secret:hover, #message:hover, #id:hover, #mensages2:hover, 
+.Mensages3:hover, .Mensages4:hover, #web:hover {
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 7px 0 #ffffff,
+    0 0 12px 0 #ffffff,
+    0 0 17px 0 #ffffff;
+}
+
+/* Soy un chocolate Derretido */
+.listas1, .listas2 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+}
+li {
+    padding-top: 25px;
+    padding-right: 50px;
+}
+
+/* Listas de buscame */
+.Hh5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 150px;
+    margin: 20px 40px;
+    gap: 15%;
+    font-size: x-large;
+}
+@media (max-width: 480px) {
+    .Hh5 {
+        margin: 20px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}

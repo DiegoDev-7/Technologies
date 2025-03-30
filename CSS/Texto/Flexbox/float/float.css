@@ -1,0 +1,45 @@
+.box {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    float: left; /* Permite abarcar un pequeño campo sobre un texto a la izquierda */
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    float: right; /* Permite abarcar un pequeño campo sobre un texto a la derecha */
+    margin-left: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    margin-left: 20px;
+
+/* Posiciones */
+    position: relative;
+    bottom: 11.3rem;
+    left: 41.7rem;
+
+/* texto alineado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: large;
+    text-align: justify;
+}

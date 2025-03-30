@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: gray;
+}
+
+.wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centrar un texto en todo el medio */
+    border-radius: 5px;
+    background-color: #BE6942;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Define el espacio entre ellas (si esta asi es por que todos los espacios divididos son iguales, pruebe quitando los box) */
+    grid-template-rows: 50% 50% 50% 50% 50% 50%; /* Define el ancho de cada fila */
+    gap: 10px;
+}
+
+.box1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.box2 {
+    grid-column: 3 / 6;
+    grid-row: 1;
+}
+
+.box3 {
+    grid-column: 4 / 1;
+    grid-row: 2;
+}
+
+.box4 {
+    grid-column: 4 / 6;
+    grid-row: 2;
+}
+
+.box5 {
+    grid-column: 3 / 1;
+    grid-row: 3;
+}
+
+.box6 {
+    grid-column: 3 / 5;
+    grid-row: 3;
+}
+
+.box7 {
+    grid-column: 5 / 6;
+    grid-row: 3;
+}
+
+.box8 {
+    grid-column: 1 / 2;
+    grid-row: 4;
+}
+
+.box9 {
+    grid-column: 2 / 4;
+    grid-row: 4;
+}
+
+.box10 {
+    grid-column: 4 / 6;
+    grid-row: 4;
+}
+
+.box11 {
+    grid-column: 1 / 3;
+    grid-row: 5;
+}
+
+.box12 {
+    grid-column: 3 / 6;
+    grid-row: 5;
+}
+
+.box13 {
+    grid-column: 4 / 1;
+    grid-row: 6;
+}
+
+.box14 {
+    grid-column: 4 / 6;
+    grid-row: 6;
+}

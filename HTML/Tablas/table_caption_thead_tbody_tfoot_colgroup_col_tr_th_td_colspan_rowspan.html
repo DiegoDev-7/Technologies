@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table,th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+    th {
+        text-align: center;
+    }
+</style>
+</head>
+
+  <!--  table, thead, tbody, colgroup, col, tr, th, td, colspan, rowspan.
+
+  table     (Es un elemento padre el cual agrupa todos los componentes de abajo necesarios para
+            crear una tabla).
+
+  caption     (se utiliza para darle un título a una tabla en HTML. Este título generalmente se coloca justo después de table).
+
+  thead     (Se utiliza para separar los títulos de una tabla. Define la sección de encabezado, 
+            donde se colocan los títulos de las columnas.).
+
+  tbody     (Se emplea para agrupar el contenido o los datos de una tabla).
+
+  tfoot     (Se utiliza para definir un pie de tabla, generalmente donde se agrupan las celdas que contienen 
+            totales, resúmenes, o cualquier otra información que se desee mostrar al final de la tabla).
+  
+  colgroup  (Agrupa varias columnas en una tabla. Permite definir estilos o atributos que 
+            se aplican a un grupo de columnas, optimizando la gestión de estas.).
+  
+  col   (Define las propiedades de una o más columnas. Se usa dentro de colgroup para establecer 
+        estilos CSS específicos, como el ancho de las columnas o el color de fondo.).
+
+  tr    (table row (Representa una fila en una tabla. Cada fila puede contener celdas de encabezado (th) 
+        o celdas de datos (td))
+
+  th    (table header (Es un encabezado en una tabla. Se utiliza para describir el contenido de las columnas 
+        o filas, proporcionando títulos o descripciones para los datos))
+
+  td    (table data (Puede contener diversos tipos de contenido como texto, imágenes o enlaces.)).
+
+  colspan   (Combina las celdas (horizontalmente)).
+
+  rowspan   (Combina las columnas (verticalmente)).
+
+  &nbsp     (Agregar espacios vacios).
+
+  -->
+
+<body>
+<table>
+    <caption>TITULO PRIMERA TABLA</caption>
+    <colgroup>
+        <col span="2" style="background-color: lightblue;">
+        <col span="2" style="background-color: lightgreen;">
+        <col span="2" style="background-color: lightgoldenrodyellow;">
+        <col span="1" style="background-color: lightseagreen;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th style="background-color: lightslategray;">&nbsp</th>
+            <th style="background-color: lightslategray;">Titulo 2</th>
+            <th style="background-color: lightslategray;">Titulo 3</th>
+            <th style="background-color: lightslategray;">Titulo 4</th>
+            <th style="background-color: lightslategray;">Titulo 5</th>
+            <th style="background-color: lightslategray;">Titulo 6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Contenido 1</td>
+            <td>Contenido 2</td>
+            <td>Contenido 3</td>
+            <td>Contenido 4</td>
+            <td>Contenido 5</td>
+            <td>Contenido 6</td>
+        </tr>
+        <tr>
+            <td>Contenido 1</td>
+            <td>Contenido 2</td>
+            <td>Contenido 3</td>
+            <td>Contenido 4</td>
+            <td>Contenido 5</td>
+            <td>Contenido 6</td>
+        </tr>
+        <tr>
+            <td>Contenido 1</td>
+            <td>Contenido 2</td>
+            <td>Contenido 3</td>
+            <td>Contenido 4</td>
+            <td>Contenido 5</td>
+            <td>Contenido 6</td>
+        </tr>
+        <tr>
+            <td>Contenido 1</td>
+            <td>Contenido 2</td>
+            <td>Contenido 3</td>
+            <td>Contenido 4</td>
+            <td>Contenido 5</td>
+            <td>Contenido 6</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table>
+    <caption>TITULO SEGUNDA TABLA</caption>
+    <colgroup>
+        <col  span="2" style="background-color: brown;">
+        <col style="background-color: red;">
+        <col style="background-color: brown;">
+        <col span="" style="background-color: red;">
+        <col style="background-color: red;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th style="background-color: cyan;">Titulo 1</th>
+            <th style="background-color: cyan;">Titulo 2</th>
+            <th style="background-color: cyan;">Titulo 3</th>
+            <th style="background-color: cyan;">Titulo 4</th>
+            <th style="background-color: cyan;">Titulo 5</th>
+            <th style="background-color: cyan;">Titulo 6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">Contenido 1/2</td>
+            <td colspan="1">Contenido 3</td>
+            <td colspan="2">Contenido 4/5</td>
+            <td rowspan="2">Conteindo 6</td>
+        </tr>
+        <tr>
+            <td colspan="2">Contenido 1/2</td>
+            <td colspan="1">Contenido 3</td>
+            <td colspan="2">Contenido 4/5</td>
+        </tr>
+        <tr>
+            <td colspan="2">Contenido 1/2</td>
+            <td colspan="1">Contenido 3</td>
+            <td colspan="2">Contenido 4/5</td>
+            <td rowspan="2">Conteindo 6</td>
+        </tr>
+        <tr>
+            <td colspan="2">Contenido 1/2</td>
+            <td colspan="1">Contenido 3</td>
+            <td colspan="2">Contenido 4/5</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table>
+    <caption>TITULO TERCERA TABLA</caption>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Manzanas</td>
+        <td>3</td>
+        <td>$2.00</td>
+      </tr>
+      <tr>
+        <td>Plátanos</td>
+        <td>5</td>
+        <td>$1.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>8</td>
+        <td>$3.00</td>
+      </tr>
+    </tfoot>
+</table>
+</body>
+</html>

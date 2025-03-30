@@ -1,0 +1,11 @@
+tr, td {
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    grid-template-rows: repeat(3, auto);
+    writing-mode: vertical-rl; /* Voltear el contenido */
+    background-color: hsl(25, saturation, lightness)
+}

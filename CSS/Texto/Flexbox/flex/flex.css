@@ -1,0 +1,62 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: purple;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+}
+
+  /* Add your flexbox CSS below here */
+section {
+  display: flex;
+  flex-wrap: wrap; /* Divide los contenidos cuando estan en filas */
+  flex: 200px;
+}
+
+article {
+  flex: 1 200px;
+}
+
+article:nth-of-type(3) {
+  flex: 2 30%;
+}
+
+
+  /* footer */
+button {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 15%;
+}
+  /* orden de los botones */
+button:first-child {
+  order: 1;
+}
+button:last-child {
+  order: -1;
+}
+
+  /* Add your flexbox CSS below here */
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

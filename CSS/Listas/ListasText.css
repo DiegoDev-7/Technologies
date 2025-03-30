@@ -1,0 +1,54 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+
+p {
+    width: 50%;
+    height: 50%;
+    border: solid;
+    font-kerning: auto;
+    font-feature-settings: "tnum";
+    font-variant-alternates: character-variant(user-defined-ident);
+    font-variant-caps: all-small-caps;
+    font-variant-east-asian: ruby;
+    font-variant-ligatures: common-ligatures;
+    font-variant-numeric: tabular-nums;
+    font-size-adjust: calc(25px);
+    font-stretch: ultra-expanded;
+    text-indent: 30%; /* sangria */
+    word-break: break-all; /* No deja espacios entre lineas */
+    direction: ltr; /* ltr(los elementos van de izquierda a derecha) rtl(Van de derecha a izquierda) */
+    hyphens: auto; /* dejar que el navegador inserte los guiones automáticamente donde corresponda. */
+    line-break: auto; /* saltos de linea en texto chino, japonés o coreano */
+    text-align-last: center; /* Establece la posicion de la ultima linea */
+}
+
+.leta {
+    font-variant: small-caps; /* small-caps Remplaza las minusculas */
+}
+
+h1 {
+    font-style: italic; /* Establece un em */
+    font-weight: 100; /* especifica el grueso de la letra */
+    line-height: 4em; /* Espacio entre altura de lineas */
+    font-size: 50px; /* Cambia el tamaño de letra */
+    writing-mode: vertical-lr; /* cambia la direccion del texto */
+}
+
+ol {
+    list-style-type: upper-roman; /* Cambia el numero de las listas */
+    list-style-image: url(/Imagenes/SlickoLogotipoOriginal_100x86.svg); /* Cambia los puntos y añade un punto personalizado con una imagen */
+    list-style-position: inside; /* Posiciona los numeros */
+    list-style: decimal url() inside;
+    background-size: 1rem 1rem;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    border: solid black;
+    background-size: 1rem 1rem;
+    background-position: 0 0;
+    background-repeat: repeat;
+}

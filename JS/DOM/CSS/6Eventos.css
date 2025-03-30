@@ -1,0 +1,125 @@
+/* Paginas */
+.Pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.paginas, .botoncitos { 
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    border: solid white;
+    background-color: white;
+    margin: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 15px 0 #ffffff,
+    0 0 10px 0 #ffffff,
+    0 0 5px 0 #ffffff;
+    background-color: black;
+    color: white;
+    border: solid black;
+}
+.paginas:hover, .botoncitos:hover {
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 7px 0 #ffffff,
+    0 0 12px 0 #ffffff,
+    0 0 17px 0 #ffffff;
+    color: black;
+    background-color: white;
+    border: solid;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#thirth {
+    border: 2px solid;
+    border-radius: 3px;
+    height: 100px;
+    width: 300px;
+    font-size: 20px;
+    overflow: scroll;
+}
+
+#texto {
+    position: absolute;
+    top: 96.5%;
+    left: 30px;
+
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 50px;
+}
+
+/* Tercera Caja */
+.dark3thBox {
+    background-color: #000000;
+    color: white;
+    border: solid white;
+    box-shadow: 0 0 50px 5px #333;
+}
+/* Cuarta Caja */
+.blue4thBox {
+    background-color: #6033a8;
+    color: white;
+    border: solid rgb(0, 0, 0);
+    box-shadow: 0 0 50px 5px #333;
+}
+
+/* Quita caja */
+.caja {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.heightWidth2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(50, 119, 119, 0.651);
+    border: solid rgba(50, 119, 119, 0.651);
+    border-radius: 10px;
+}
+
+/* Botones */
+.heightWidth {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(50, 119, 119, 0.651);
+    border: solid rgba(50, 119, 119, 0.651);
+    border-radius: 10px;
+}
+.width {
+    width: 80%;
+}
+.height {
+    height: 200px;
+}
+
+.contenidoCaja6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoMensagge {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    rotate: 90deg;
+}

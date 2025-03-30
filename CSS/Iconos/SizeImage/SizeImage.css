@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border: solid;
+}
+
+img:hover {
+  width: 600px;
+  cursor: pointer;
+}

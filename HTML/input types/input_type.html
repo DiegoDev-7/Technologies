@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input y sus Atributos</title>
+    <link rel="stylesheet" href="EstiloInput.css">
+</head>
+
+        <!-- <input type="button">
+
+    Es un elemento que crea un boton en una página web, este botón tiene una acción predeterminada
+    que se puede utilizar para hacer una tarea específica
+
+            Atributos
+            
+
+    name            (Define el nombre del campo de entrada).
+
+    type            (Especifica el campo de entrada como [text], [button], [password], [checkbox] etc...).
+
+    value           (Define el valor predeterminado del campo de entrada. es el texto que aparece en el botón).
+
+    checked         (Este atributo es utilizado en los inputs de tipo checkbox o radio para indicar que el input 
+                    está seleccionado por defecto.).
+
+    disabled        (Desactiva el campo de entrada. Haciendo que no se pueda interactuar con el).
+
+    Autofocus       (Ejemplo si tengo un campo de texto y coloco este atributo sin necesidad de hacer click
+                    en el campo de texto ya se podra escribir sobre el).
+
+    Autocomplete    (Permite a los usuarios completar el campo automáticamente según su historial de entradas
+                    Puede tomar valores como [on] o [off]).
+
+    form            (Permite que un campo esté vinculado a un formulario aunque no esté directamente dentro del <form>).
+
+    formenctype     (Especifica como los datos deben ser codificados al enviarse al servidor.
+                    Cambia la forma en que los datos se transmiten al servidor.
+
+                        application/x-www-form-urlencoded (por defecto)
+                        multipart/form-data (para subir archivos)
+                        text/plain).
+
+    formaction      (Sobrescribe la URL de acción del formulario en la cual está contenido el botón.).
+
+    formmethod      (Cambia el método de envío del formulario (Aplica para botones submit o image)).
+
+    formnovalidate  (Evita que el formulario sea validado antes de enviarse, ignorando cualquier validación HTML5. 
+                    Permite enviar el formulario sin pasar por la validación del navegador.
+                    Solo se usa en botones (submit)).
+
+    formtarget      (Define donde se mostrara la respuesta al enviar el formulario. Puede ser una nueva pestaña 
+                    o ventana, o un iframe dentro de la página.
+                        _blank (nueva pestaña/ventana)
+                        _self (en la misma ventana)
+                        _parent (en el marco padre)
+                        _top (en la ventana completa)
+                        
+    src             (Este atributo se utiliza en el input de tipo image para especificar la URL de la imagen que se 
+                    mostrará como botón.)).
+
+    -->
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo de &lt;input&gt;</th>
+                <th>name</th>
+                <th>type</th>
+                <th>value</th>
+                <th>checked</th>
+                <th>disabled</th>
+                <th>autofocus</th>
+                <th>autocomplete</th>
+                <th>form</th>
+                <th>formenctype</th>
+                <th>formaction</th>
+                <th>formmethod</th>
+                <th>formnovalidate</th>
+                <th>formtarget</th>
+                <th>src</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>text</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>radio</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>button</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>tel</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>search</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>datetime-local</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>month</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>week</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="yes">✔️</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+                <td class="no">No</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Ejemplos de Inputs</h2>
+
+    <!-- Input de texto -->
+    <label for="text">Texto:</label>
+    <input type="text" id="text" name="text" placeholder="Introduce texto aquí"><br><br>
+
+    <!-- Input de contraseña -->
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" placeholder="Introduce tu contraseña"><br><br>
+
+    <!-- Input de checkbox -->
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox" id="checkbox" name="checkbox"> Acepto los términos y condiciones<br><br>
+
+    <!-- Input de radio -->
+    <label>Género:</label><br>
+    <input type="radio" id="male" name="sex" value="male">
+    <label for="male">Masculino</label><br>
+    <input type="radio" id="female" name="sex" value="female">
+    <label for="female">Femenino</label><br><br>
+
+    <!-- Input de botón -->
+    <label for="button">Botón:</label>
+    <input type="button" id="button" value="Soy un botón"><br><br>
+
+    <!-- Input de enviar -->
+    <label for="submit">Enviar:</label>
+    <input type="submit" id="submit" value="Enviar"><br><br>
+
+    <!-- Input de imagen -->
+    <label for="image">Imagen:</label>
+    <input type="image" src="imagen.png" alt="Enviar" name="submit"><br><br>
+
+    <!-- Input de archivo -->
+    <label for="file">Subir archivo:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <!-- Input oculto -->
+    <input type="hidden" id="hidden" name="hidden" value="valor oculto"><br><br>
+
+    <!-- Input de teléfono -->
+    <label for="tel">Teléfono:</label>
+    <input type="tel" id="tel" name="tel" placeholder="123-456-7890"><br><br>
+
+    <!-- Input de URL -->
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" placeholder="https://ejemplo.com"><br><br>
+
+    <!-- Input de búsqueda -->
+    <label for="search">Buscar:</label>
+    <input type="search" id="search" name="search" placeholder="Buscar..."><br><br>
+
+    <!-- Input de fecha y hora -->
+    <label for="datetime-local">Fecha y Hora:</label>
+    <input type="datetime-local" id="datetime-local" name="datetime-local"><br><br>
+
+    <!-- Input de fecha -->
+    <label for="date">Fecha:</label>
+    <input type="date" id="date" name="date"><br><br>
+
+    <!-- Input de mes -->
+    <label for="month">Mes:</label>
+    <input type="month" id="month" name="month"><br><br>
+
+    <!-- Input de semana -->
+    <label for="week">Semana:</label>
+    <input type="week" id="week" name="week"><br><br>
+
+    <!-- Input de hora -->
+    <label for="time">Hora:</label>
+    <input type="time" id="time" name="time"><br><br>
+
+    <!-- Input de color -->
+    <label for="color">Color:</label>
+    <input type="color" id="color" name="color"><br><br>
+
+</body>
+</html>

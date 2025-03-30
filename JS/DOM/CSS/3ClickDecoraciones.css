@@ -1,0 +1,57 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    /* Paginas */
+.Pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.paginas { 
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    border: solid white;
+    background-color: white;
+    margin: 10px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 15px 0 #ffffff,
+    0 0 10px 0 #ffffff,
+    0 0 5px 0 #ffffff;
+    background-color: black;
+    color: white;
+    border: solid black;
+}
+.paginas:hover {
+    box-shadow: 0 0 15px 0 #000000,
+    0 0 15px 0 #333,
+    0 0 7px 0 #ffffff,
+    0 0 12px 0 #ffffff,
+    0 0 17px 0 #ffffff;
+    color: black;
+    background-color: white;
+    border: solid;
+}
+
+/* Contenido input, botones */
+.CONTENEDOR {
+    border: solid;
+    padding: 15px;
+    width: 20%;
+    margin: 0 auto;
+}
+.Contenedor1, .Contenedor2 {
+    display: flex;
+    justify-content: center;
+}
+#usernameInput, .buttonInput, #message,
+#recibir, .buttonInput, #nuevo {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}

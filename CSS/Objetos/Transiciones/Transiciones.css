@@ -1,0 +1,114 @@
+.Rectangulo {
+    width: 95%;
+    height: 95%;
+    border: solid black;
+    padding: 1rem;
+    margin: 0 auto;
+
+}
+    /* Primera Caja */
+.box1 {
+    width: 250px;
+    height: 250px;
+    border: solid;
+    /* Centrar un div */
+    /* Manera 1 */
+    display: grid;
+    place-items: center;
+    /* Manera 2 */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* Manera 3 */
+    margin: 0 auto;
+}
+
+.Adentro1 {
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-radius: 50%;
+    background-color: blue;
+    /* Transiciones */
+    /* transition: <propiedad> <duration> <tining-function> <delay>*/
+    transition: background-color 2s, width 2s, height 2s, rotate 0.5s, box-shadow 5s;
+    transition: 0.5s;
+}
+
+.Adentro1:hover {
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-radius: 0%;
+    box-shadow: 0px 0px 50px 3px black;
+
+    background-color: red;
+    rotate: 180deg;
+}
+
+.Adentro1:active {
+    width: 245px;
+    height: 245px;
+    border: 3px solid black;
+    background-color: green;
+    box-shadow: 0px 0 50px 5px black;
+
+    transition: 0.5s;
+    rotate: 180deg;
+}
+
+
+    /* Segunda caja */
+.Rectangulo2 {
+    width: 95%;
+    height: 95%;
+    border: solid black;
+    padding: 1rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row wrap; /* Remplaza flex-direction y flex-wrap */
+    gap: 0.5rem;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    border: solid;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boton {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    padding: 6rem;
+    border: transparent;
+    border: 2px solid black;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: lightgray;
+    font-size: x-large;
+
+    transition: background-color 2s;
+    transition: 2s;
+}
+
+button:hover {
+    background-color: gray;
+    transition: 1s;
+    color: white;
+}

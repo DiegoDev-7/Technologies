@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      /* header and body setup */
+
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      }
+
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+
+      /* Header styling */
+
+      header {
+        height: 150px;
+      }
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Red panda image */
+
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+    <!-- Elementos href, src, srcset, sizes, alt, picture.
+
+    href  (Define la URL o enlace hacia la que apunta un elemento como <a>, <link>, <area>, entre otros).
+
+    src   (Especifica la URL de la fuente de un recurso externo, como imágenes o scripts. 
+          Se utiliza en elementos como <img>, <script>, <iframe>, entre otros).
+    
+    srcset  (Se utiliza para proporcionar varias versiones de una misma imagen con diferentes resoluciones y tamaños el 
+            navegador seleccionara una automaticamente dependiendo de si es 1x = 100% de una pagina, 2x = 200% 
+            (tambien se puede utilizar 1920w)).
+
+    sizes   (Se utiliza para proporcionar al navegador múltiples versiones de una misma imagen en diferentes tamaños o 
+            resoluciones ((max-width: 1200px) 675px, esto significa que seleccionara una imagen que tenga un limite 
+            de 675px o la mas cercana) es decir que si tuvieramos una imagen de 1200x670 y otra de 1200x600 seleccionaria
+            la imagen que tiene 1200x670).
+
+    alt   (Proporciona un texto alternativo que describe el contenido de una imagen).
+
+    picture   (Se utiliza para proporcionar multiples fuentes de imagenes, como el tamaño, el tipo de formato de imagen
+              (Web, jpg, png)).
+
+    source   (Permite añadir varias imagenes o videos y el navegador seleccionara una según el tipo de dispositivo 
+            o navegador).
+    
+    -->
+
+  <body>
+    <header>
+      <h1>Mozilla</h1>
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
+  <img src="/Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/firefox_logo-only_RGB.png" alt="Logo Firefox">
+    </header>
+
+    <main>
+      <article>
+        <!-- insert iframe from youtube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uH2kPxx-dYc?si=58o2kpgeA5D3akf2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Rocking the free web</h2>
+
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+      </article>
+
+      <div class="further-info">
+        <!-- Enlaces a las páginas correspondientes con imágenes responsive -->
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img 
+            alt="Firefox Logo"
+            srcset="/Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/firefox_logo-only_RGB.png 1200w,
+                    /Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/firefox-logo-only_400x120.png 400w"
+            sizes="(max-width: 1200px) 900px,
+                    400px">
+        </a>
+
+        <a href="https://www.mozilla.org/">
+            <img
+            alt="Firefox Dinosaurio"
+            srcset="/Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/mozilla-dinosaur-head.png 1200w,
+                    /Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/mozilla-dinosaur-head_400x120.png 400w"
+            sizes="(max-width: 1200px) 900px,
+                    400px">
+        </a>
+
+        <a href="https://addons.mozilla.org/">
+            <img
+            alt="FireFox Adorno"
+            srcset="/Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/firefox-addons.jpg 1200w,
+                    /Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/firefox-addons_400x120.png 400w"
+            sizes="(max-width: 1200px) 900px,
+                    400px">
+        </a>
+
+        <a href="https://developer.mozilla.org/en-US/">
+            <img
+            alt="Mondongo"
+            srcset="/Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/mdn.svg"
+            sizes="(max-width: 1200px) 900px,
+                    400px">
+        </a>
+
+        <div class="clearfix"></div>
+    </div>
+
+      <div class="red-panda">
+        <!-- insert picture element -->
+         <picture>
+          <img 
+          alt="Panda Rojo"
+          srcset="/Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/red-panda.jpg 1600w,
+                  /Multimedia/href_src_srcset_sizes_alt_picture/Archivos2/red_panda_1200x600.png 1200w"
+          sizes="(max-width: 1600px) 600px,
+                  600px">
+         </picture>
+      </div>
+    </main>
+  </body>
+</html>

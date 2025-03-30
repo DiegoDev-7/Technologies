@@ -1,0 +1,98 @@
+body {
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+}
+
+
+h1 {
+    color: rgb(0, 225, 255, 0.829);
+    border: 3px solid #09f;
+}
+
+#Viewbutton {
+    color: white;
+    border: 0;
+    background-color: black;
+}
+button + button {
+    color: red;
+}
+
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+a:visited {
+    color: rgb(255, 0, 170);
+}
+.link:hover {
+    text-decoration: none;
+    outline: 3px solid rgb(0, 255, 85);
+}
+.link:active {
+    outline: 3px solid blue;
+}
+
+ul {
+    font-size: 30px;
+}
+ul > li {
+    opacity: 70%;
+}
+li:first-child {
+    color: blueviolet;
+}
+li:last-child {
+    color: green;
+}
+
+
+.description .bold {
+    color: blue;
+}
+.secondary .bold {
+    color: red;
+}
+
+.cubo {
+    width: 250px;
+    height: 250px;
+    border: 10px solid black;
+    padding: 10px;
+    margin: 50px;
+    box-sizing: border-box; /* Hace que el contenido en la caja permanezca igual y no afecte el width y el height */
+    font-size: 50px;
+    overflow: hidden; /* Oculta el contenido */
+    text-overflow: ellipsis; /* Si el contenido es demasiado largo el contenido termina en ... */
+}
+.cubo2 {
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    padding: 10px;
+    margin: 50px;
+    box-sizing: border-box; /* Hace que el contenido en la caja permanezca igual y no afecte el width y el height */
+    font-size: 50px;
+    overflow: auto; /* Hace que el contenido no se salga de la caja */
+}
+.caja {
+    border: 5px solid black;
+    margin: auto;
+    width: 70%;
+    color: white;
+}
+.vida {
+    padding: 10px;
+    width: calc(90% - 10px);
+    background-color: rebeccapurple;
+}
+
+.prueba {
+    border: 5px solid black;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 2cm;
+}

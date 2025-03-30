@@ -1,0 +1,51 @@
+/* Parrafos */
+p {
+    color: green;
+    line-height: 2.5; /* Espacio entre la altura de lineas */
+    letter-spacing: 9.5px; /* Espacio entre lineas */
+    word-spacing: 4rem; /* establece la longitud del espacio entre palabras y entre etiquetas */
+}
+
+section p:first-child {
+    font-size: large;
+    color: red;
+}
+
+section p:last-child {
+    font-size: large;
+    color: blue;
+}
+section .Anerdoda:last-child {
+    font-weight: 800;
+    color: black;
+}
+
+/* Botones */
+button:hover {
+    background-color: aqua;
+    color: red;
+    cursor: pointer;
+}
+
+/* Links */
+a {
+    color: aqua;
+}
+a:visited {
+    color: red;
+    border-color: yellow;
+    background-color: white;
+}
+a:hover {
+    text-decoration: none; /* Quitar el subrayado al pasar el mouse*/
+}
+a:active {
+    color: red;
+}
+div:focus-within {
+    color: white;
+    background-color: black;
+}
+section::before {
+    content: "➥";
+}

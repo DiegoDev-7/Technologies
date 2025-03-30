@@ -1,0 +1,64 @@
+const scene = new THREE.Scene();
+
+    // Crear la cámara
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 5;
+
+    // Crear el renderizador
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Crear cubo (geometría)
+    const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+    const cubeMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+    scene.add(cube);
+
+    // Crear esfera (geometría)
+    const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
+    const sphereMaterial = new THREE.MeshLambertMaterial({ color: 0xff0000 });
+    const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+    sphere.position.x = 2;
+    scene.add(sphere);
+
+    // Crear luz puntual
+    const pointLight = new THREE.PointLight(0xffffff, 1, 100);
+    pointLight.position.set(5, 5, 5);
+    scene.add(pointLight);
+
+    // Crear luz ambiental
+    const ambientLight = new THREE.AmbientLight(0x404040, 0.5);
+    scene.add(ambientLight);
+
+    // Crear gradiente de fondo
+    scene.background = new THREE.Color(0x87CEEB);  // Color azul de cielo
+
+    // Textura en el cubo
+    const textureLoader = new THREE.TextureLoader();
+    const texture = textureLoader.load('https://via.placeholder.com/200');
+    cubeMaterial.map = texture;
+
+    // Animación
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Rotación del cubo
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      // Rotación de la esfera
+      sphere.rotation.y += 0.01;
+
+      // Renderizar la escena
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    // Redimensionar el canvas si cambia el tamaño de la ventana
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });

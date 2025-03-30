@@ -1,0 +1,56 @@
+a {
+    color: orange; 
+}
+    
+a:hover {
+    text-decoration: none;
+}
+    
+a:visited {
+    color: green;
+}
+    
+.Contenedor1{
+    font-size: 150%;
+}
+
+div:first-line {
+    color: red;
+}
+
+.Tabla1 {
+    border-collapse: collapse;
+}
+
+.Title1, .Description1 {
+    padding: 8px;
+    text-align: left;
+}
+
+.Tabla1 tr:nth-child(even) {
+    background-color: #333; /* Fondo para filas pares */
+    color: white; /* Color de texto blanco */
+}
+
+
+/* Tabla2 */
+.Tabla {
+    border: 2px solid black;
+    border-collapse: collapse; /* Quita los espacios en blanco */
+    box-shadow: 1px 1px 25px 10px lightblue;
+    width: 100%;
+}
+.Cabeza {
+    background-color: lightgray;
+}
+.Cuerpo {
+    background-color: lightblue;
+}
+.Pies {
+    background-color: lightgreen;
+}
+
+.content, .content2 {
+    text-align: center;
+    table-layout: fixed;
+}

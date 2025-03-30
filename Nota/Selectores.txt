@@ -1,0 +1,85 @@
+/* 
+
+    !!!!!@!!!!!
+
+        @import  Se utiliza para importar una hoja de estilo que ya este customizada a la hoja de estilo actual.
+
+            @import url(/1Edit/Edit1/Edit1.css);
+
+        
+        @media  Para crear una sección de nuestra hoja de estilo que solo se aplicará en los navegadores con una ventana 
+                gráfica de más de 30em de ancho. Si el navegador es más ancho que 30em, el color de fondo será azul.
+
+            @media (min-width: 140em) {             
+            background-color: blue;                 
+            body {
+            }
+            }
+
+            
+    !!!!!Longitudes!!!!!
+
+        px  (Píxel (Representa 1px que equivale a el pixel fisico en la pantalla del dispositivo)).
+        pc  (Picas          1pc = 16px      (Unidad tipográfica)).
+        pt  (Puntos         1pt = 1.333px   (Unidad tipográfica)).
+        cm  (Centímetros    1cm = 37.8px    (Unidad física)).
+        mm  (Milímetros     1mm = 3.78px    (Unidad física)).
+        in  (Pulgadas       1in = 96px      (Unidad física)).
+        q   (Ques           1q  = 0.75px    (Unidad relativa)).
+
+        %   (Porcentaje Depende del tamaño del contenedor. (Relativo al elemento contenedor)).
+
+        em  (               1em = 16px).
+        ex  (Altura de "x"  1ex = 8px       (Altura de "x" minúscula)).
+        ch  (Ancho          1ch = 8px       (Ancho del caracter "0")).
+        rem (               1rem = 16px     (tamaño fuente raiz por defecto)).
+        rems(               1rems = 32px    (tamaño doble fuente raiz)).
+
+
+    !!!!!Texto!!!!!
+    
+        text-aling  (start:         Marca un principio
+                    end:            Marca un final
+                    left:           El contenido se alinea al borde de la izquierda de la caja
+                    right:          El contenido se alinea al borde de la derecha de la caja
+                    center:         El contenido se centra dentro de la caja
+                    justify:        El contenido se rellena en la caja sin dejar huecos ☰
+                    match-parent:   Se utiliza para decirle al texto hijo que siga los valores 
+                                    de su padre (se utiliza principalmente para no escribir tanto 
+                                    codigo css)).
+
+        font-size   (Especifica la dimension(tamaño) de la letra tambien puede alterar el aspecto de alguna otra cosa,
+                    valores     xx-small, x-small, small, medium, large, x-large, xx-large).
+
+
+    !!!!!Colores!!!!!
+        
+        background-color    (Define el color de fondo de un elemento).
+                            background-color: #ffffff;                  (Normal)
+                            background-color: rgb(211, 64, 64);        
+                            background-color: rgba(255,0,0,0.2);
+                            background-color: hsl(90, 100%, 50%);       (Saturacion)
+                            background-color: hsla(90, 100%, 50%);      (Saturacion)
+
+        background      
+
+
+        color   color: rgb(211, 64, 64), rgb(17, 236, 17), rgb(18, 18, 218);
+                color: #ffffff;).
+
+
+    !!!!!Brillo!!!!!
+
+        opacity     (Ajusta la transparencia de un elemento).
+                    opacity: 1; (hace que el elemento sea completamente opaco).
+                    opacity: 0; (lo hace completamente transparente).
+
+        filter      (Ajusta el brillo de un elemento).
+                    filter: brightness(0.7);
+
+
+    !!!!!Posiciones!!!!!
+                                    
+        transform
+                
+*/

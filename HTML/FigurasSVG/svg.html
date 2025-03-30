@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <!-- Elementos width, height, figure, rect, x, y, rx, ry, pathLength, circle, cx, cy, r.
+     
+    width   (Ancho).
+
+    height  (Altura).
+
+    figure  (Representa una Imagen, Grafico o Figura).
+
+    rect    (Rectangulos o Cuadrados).
+    
+    x       (posicionamiento Horizontal).
+
+    y       (Posicionamiento Vertical).
+
+    rx      (Mide el radio de el posicionamiento Horizontal).
+
+    ry      (Mide el radio de el posicionamiento Vertical).
+
+pathLenght  ().
+
+circle      (Circulos).
+
+    cx      (Posicionamiento Horizontal de el circulo).
+    
+    cy      (Posicionamiento Vertical de el ciruclo).
+
+    r       (Radio de el ciruclo).
+
+    -->
+
+    <body>
+
+    <!-- Rectangulo -->
+    <figure>
+        <svg>
+            <rect width="100" height="100" />
+          
+            <rect width="100" height="100" x="200" y=""/>
+        </svg>
+    </figure>
+
+    <!-- Circulo -->
+    <figure>
+        <svg>
+            <circle pathLength="50" cx="50" cy="100" r="50" />
+        </svg>
+    </figure>
+
+    <!-- Elipse (circulo sin ser un ciruclo) -->
+    <figure>
+        <svg>
+            <ellipse cx="50" cy="25" rx="50" ry="25"/>
+        </svg>
+    </figure>
+
+    <!-- Línea -->
+    <figure>
+        <svg>
+            <line x1="10" x2="10" y1="0" y2="150" stroke="black" stroke-width="2"/>
+        </svg>
+    </figure>
+
+    <!-- polyline (Líneas rectas (cada linea representa un trazo de linea en el x, y, y -x, -y cada coma es un espacio entre los numeros (50 160)) -->
+    <figure>
+        <svg>
+            <polyline points="100, 0 100, 50 10, 50 160, 150 100, 0 30, 150 190, 50 100, 50 " fill="" stroke="black" />
+        </svg>
+    </figure>
+
+    <!-- Lo mismo que polyline exceptuando que el ultimo punto conecta con el primero -->
+    <figure>
+        <svg>
+            <polygon points="100, 0 100, 50 10, 50 160, 150 100, 0 30, 150 190, 50 100, 50 " fill="none" stroke="black"/>
+        </svg>
+    </figure>
+
+
+    
+
+    <!--  -->
+    <figure>
+        <svg width="100" height="100">
+
+            <path d="M 10 10 H 90 V 90 H 10 L 10 10"/>
+          
+            <!-- Points -->
+            <circle cx="10" cy="10" r="2" fill="red"/>
+            <circle cx="90" cy="90" r="2" fill="red"/>
+            <circle cx="90" cy="10" r="2" fill="red"/>
+            <circle cx="10" cy="90" r="2" fill="red"/>
+          
+          </svg>
+    </figure>
+    </body>
+</html>
