@@ -1,2 +1,2 @@
 # TECHNOLOGIES
-Hola! Aqui propociono toda una guia de mi proceso como developer donde adjunto varias tecnologias como HTML, CSS, JS, NODEJS, GIT Y SQL
+Hello! Here I provide a whole guide of my process as a developer where I attach various technologies such as HTML, CSS, JS, NODEJS, GIT and SQL
