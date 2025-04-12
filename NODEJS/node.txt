@@ -1,0 +1,12 @@
+/* 
+
+        Node.js                         (NodeJS es un entorno de ejecucion de JavaScript basado en el motor V8 de Google Chrome que permite ejecutar codigo JavaScript en el lado del servidor).
+
+        Node                            (Abre la consola interactiva de Node.js donde se pueden ejecutar comandos de JS directamente y muesta la version de Node.js).
+
+        Node -v                         (Muestra la version de Node.js).
+
+        Node archivo.js                 (Ejecuta o inicia un archivo con todos los comandos que tengamos en la hoja).
+
+ */
+ 
