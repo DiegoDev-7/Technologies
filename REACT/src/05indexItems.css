@@ -1,0 +1,21 @@
+.color {
+  background: linear-gradient(153deg, rgba(171,0,255,0.68) 0%, rgba(111,0,255,0.61) 17%, rgba(120,15,255,0.65) 30%, rgba(0,26,255,0.52) 42%, rgba(118,43,173,0.56) 56%, rgba(231,126,126,0.75) 69%, rgba(255,40,40,0.58) 79%, rgba(255,0,0,0.57) 89%, rgba(190,0,0,0.57) 100%);
+  background-size: 200% 200%; /* Hace que el fondo sea más grande para permitir movimiento */
+  background-position: top left; /* Posición inicial */
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.color:hover {
+  background-position: bottom right;
+  transform: scale(1.15);
+  transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+.color:not(:hover) {
+  transition: transform 0.5s ease-in-out, background-position 0.5s ease-in-out;
+}

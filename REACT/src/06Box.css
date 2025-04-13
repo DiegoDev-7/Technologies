@@ -1,0 +1,42 @@
+.box {
+    background-color: black;
+    color: white;
+    margin: 4px;
+}
+
+.box--small {
+    width: 40px;
+    height: 40px;
+}
+
+.box--medium {
+    width: 80px;
+    height: 80px;
+}
+
+.box--large {
+    width: 120px;
+    height: 120px;
+}
+
+
+.text-small {
+    font-size: 20px;
+}
+
+.text-medium {
+    font-size: 40px;
+}
+
+.text-large {
+    font-size: 60px;
+}
+
+
+.On {
+    background-color: #333;
+}
+
+.Off {
+    background-color: white;
+}
