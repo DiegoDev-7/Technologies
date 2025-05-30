@@ -134,8 +134,6 @@
                                                                     Ejemplo: ctx.shadowOffsetX = 5;
                                                                              ctx.shadowOffsetY = 5;
 
-
-
 */
 
 

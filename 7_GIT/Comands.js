@@ -38,6 +38,7 @@
 
             git branch -d name                                              (Se utiliza para eliminar una rama).
 
+            git branch -D name                                              (Eliminar la rama forzosamente)
 
 
         -----ESTADO Y CAMBIOS-----
@@ -47,6 +48,8 @@
             git add                                                         (Añade archivos para el proximo commit).
 
             git commit -m "message"                                         (Agrega un commit, es decir crea un punto en el historial de el repositorio con los ultimos archivos guardados en ese momento).
+
+            git commit --amend -m "Nuevo mensaje del commit"                (Permite renombrar el ultimo commit).
 
             git checkout                                                    (Se utiliza para restaurar un archivo al último commit más reciente. Pues permite descartar cambios aun no confirmados).
 
@@ -102,7 +105,7 @@
 
         -----SUBIR Y DESCARGAR CAMBIOS GITHUB-----
 
-            git remote add origin git@github.com:name/name.git              (Se utiliza para vincular un repositorio local con el repositorio remoto).
+            git remote add github git@github.com:name/name.git              (Se utiliza para vincular un repositorio local con el repositorio remoto).
 
             git push                                                        (Se utiliza para subir los cambios desde el repositorio local al repositorio remoto).
 
@@ -122,7 +125,7 @@
 
             (Estaos comandos son utilizados principalmente para el GIT BASH por si en algun momento se encuentra bloqueado en una interfaz).
 
-            q                                                               (Salir de la pagina anterior).
+            :q                                                               (Salir de la pagina anterior).
 
             Space                                                           (Avanzar una pagina).
 

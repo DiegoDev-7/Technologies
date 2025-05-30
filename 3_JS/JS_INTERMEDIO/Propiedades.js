@@ -24,7 +24,7 @@
             clearInterval()                                                 (Detiene la ejecución de un setInterval()).
 
 
-      ---------------Strins---------------
+    ---------------Strins---------------
 
         .toLowerCase()                                                      (Convierte "strings" a minúsculas).
 
@@ -37,42 +37,42 @@
 
                 .trim() / .trimStart() / .trimEnd()                         (Elimina espacios en blanco al inicio y/o final).
 
-                repeat(n)                                                   (Repite una cadena n veces.).
+                .repeat(n)                                                  (Repite una cadena n veces).
 
                 .padStart(longitud, valor) / .padEnd(longitud, valor)       (Rellena un string hasta cierta longitud).
 
 
             Métodos de Manipulación de Cadenas
 
-                slice(inicio, fin)                                          (Extrae una parte de la cadena (sin modificarla)).
+                .slice(inicio, fin)                                         (Extrae una parte de la cadena (sin modificarla)).
 
-                replace(valor, nuevoValor)                                  (Reemplaza una parte de la cadena).
+                .replace(valor, nuevoValor)                                 (Reemplaza una parte de la cadena).
 
 
             Métodos de División y Transformación
 
-                split(separador)                                            (Divide la cadena en un array usando un separador).
+                .split(separador)                                           (Divide la cadena en un array usando un separador).
 
 
-      ---------------Arrays---------------
+    ---------------Arrays---------------
 
-        shift()                                                             (Elimina el primer elemento).
+        .shift()                                                            (Elimina el primer elemento).
 
-        unshift()                                                           (Agrega elementos al inicio).
+        .unshift()                                                          (Agrega elementos al inicio).
 
-        push()                                                              (Agrega elementos al final).
+        .push()                                                             (Agrega elementos al final).
 
-        pop()                                                               (Elimina el último elemento).
+        .pop()                                                              (Elimina el último elemento).
 
-        concat()                                                            (Fusiona arrays (sin modificar los originales)).
+        .concat()                                                           (Fusiona arrays (sin modificar los originales)).
 
-        join()                                                              (Convierte un array en un string con separador).
+        .join()                                                             (Convierte un array en un string con separador).
 
-        toString()                                                          (Convierte el array en string (con comas)).
+        .toString()                                                         (Convierte el array en string (con comas)).
 
-        sort()                                                              (Ordena los elementos del array).
+        .sort()                                                             (Ordena los elementos del array).
 
-        splice()                                                            (Elimina o remplaza elementos).
+        .splice()                                                           (Elimina o remplaza elementos).
 
 
             Métodos de Manipulación de Arrays
@@ -83,64 +83,68 @@
 
                 .flat()                                                     (Aplana un array anidado en un solo nivel).
 
+                .filter()                                                   (Crea un nuevo array con elementos que pasan una condición).
+
                 .reduce()                                                   (Reduce un array a un solo valor (útil para sumas, multiplicaciones, etc)).
 
-                fill(valor, inicio, fin)                                    (Rellena una parte de un array con un valor).
+                .fill(valor, inicio, fin)                                   (Rellena una parte de un array con un valor).
 
 
             Métodos de búsqueda
 
-                indexOf(valor)                                              (Devuelve la posición del primer elemento encontrado o -1 si no existe).
+                .indexOf(valor, index)                                      (Recorre un array y devuelve la posición del index del primer elemento encontrado o -1 si no existe / (indexOf("manzana", 1)) Empieza a buscar "manzana" a partir del indice 1 y si lo necunetra revela su posicion con el index).
 
-                has(valor)                                                  (Verifica si un elemento está en un conjunto (Set) o (Map)).
+                .has(valor)                                                 (Verifica si un elemento está en un conjunto (Set) o (Map)).
 
-                get(clave)                                                  (Obtiene un valor en un Map).
+                .get(clave)                                                 (Obtiene un valor en un Map).
 
 
             Métodos de transformación
 
-                map(función)                                                (Aplica una función a cada elemento y devuelve un nuevo array).
+                .map(función)                                               (Aplica una función a cada elemento y devuelve un nuevo array).
 
-                forEach(función)                                            (Ejecuta una función por cada elemento (sin devolver un nuevo array)).
+                .forEach(función)                                           (Ejecuta una función por cada elemento (sin devolver un nuevo array)).
 
-                from()                                                      (Convierte un Set en un Array).
+                Array.from(valor)                                           (Convierte un Set en un Array o convierte un string en un array).
 
 
             Métodos de estructuras tipo Set y Map
 
-                set(valor)                                                  (Agrega elementos a un Set, evitando duplicados).
+                .set(valor)                                                 (Agrega elementos a un Set, evitando duplicados).
 
-                size                                                        (Como length, pero para Set y Map).
+                .size                                                       (Como length, pero para Set y Map).
 
 
     ---------------Objects---------------
 
-        .assign(destino, fuente)                                            (Copia propiedades de un objeto a otro).
+        Object.assign(destino, fuente)                                      (Copia propiedades de un objeto a otro).
 
-        .freeze(obj) / .seal(obj)                                           (Bloquea modificaciones en un objeto).
+        Object.freeze(obj)                                                  (Bloquea modificaciones en un objeto, no permitie agregar, eliminar o modificar).
 
-        .fromEntries()                                                      (Convierte un array de pares [clave, valor] en un objeto).
-        
-        .keys() 	                                                        (Devuelve un array con el nombre(claves) de las propiedades enumerables propias de un objeto).
+        Object.seal(obj)                                                    (No permtie agregar ni eliminar propiedades pero si permite modificarlas).
 
-        .values()                                                           (Devuelve un array con el valor de las propiedades enumerables propias de un objeto).
+        Object.fromEntries()                                                (Convierte un array de pares [clave, valor] en un objeto).
 
-        .entries()                                                          (Devuelve un array de pares (clave-valor) de las propiedades enumerables propias de un objeto).
-                                                                                //Nota: devuelve keys y
+        Object.keys(obj) 	                                                (Devuelve un array con el nombre(claves) de las propiedades enumerables propias de un objeto).
+
+        Object.values(obj)                                                  (Devuelve un array con el valor de las propiedades enumerables propias de un objeto).
+
+        Object.entries(obj)                                                 (Devuelve un array de pares (clave-valor) de las propiedades enumerables propias de un objeto).
 
 
     ---------------Calcular---------------
-
+    
             Métodos Más Importantes de Math
 
                 Math.floor                                                  (Redondea un numero hacia abajo, de un numero decimal al entero mas cercano pero hacia abajo).
-                                                                                console.log(Math.floor(45.99)) //Resultado 45).
 
                 Math.ceil(x)                                                (Redondea un número hacia arriba (entero más cercano))
 
-                Math.round()                                                (Si hay un numero decimal lo redondea al numero mas cercano).
+                Math.round(x)                                               (Si hay un numero decimal lo redondea al numero mas cercano).
 
+                Math.trunc(x)                                               (Elimina los decimales de un número (sin redondear)).
 
+                 
             Numeros Aleatorios
 
                 Math.random                                                 (Selecciona numeros aleatorios).
@@ -150,6 +154,10 @@
 
                 Math.sqrt(x)                                                (Devuelve la raíz cuadrada de un número).
 
+                Math.abs(x)                                                 (Devuelve el valor absoluto de un número (sin signo)).
+
+                Math.sign(x)                                                (Indica si un número es positivo (1), negativo (-1) o 0).
+
 
             Mínimos y Máximos
 
@@ -158,16 +166,9 @@
                 Math.max(x, y, ...)                                         (Devuelve el número más grande de una lista).
 
 
-            Otras Funciones Útiles
-
-                Math.abs(x)                                                 (Devuelve el valor absoluto de un número (sin signo)).
-
-                Math.trunc(x)                                               (Elimina los decimales de un número (sin redondear)).
-
-                Math.sign(x)                                                (Indica si un número es positivo (1), negativo (-1) o 0).
-
-
     ---------------Alertas---------------
+
+        window                                                              (Es un objeto global que representa la ventana del navegador).
 
             Métodos Claves del Objeto window
 
@@ -179,8 +180,6 @@
 
 
             Métodos para Manipular Ventanas
-
-                window                                                      (Es un objeto global que representa la ventana del navegador).
 
                 window.open(url, nombre, opciones)                          (Abre una nueva ventana/pestaña).
 
@@ -204,6 +203,8 @@
 
 
     ---------------Console---------------
+
+        console.log(mensaje)                                                (Imprime un mensaje en la consola).
 
         console.dir(mensaje)                                                (Para registrar un objeto y visualizar sus propiedades).
 
@@ -247,6 +248,7 @@ console.log(miCoche instanceof Vehiculo)
 
 console.log("---Métodos Avanzados para Funciones---")
 /* bind */
+console.log("--bind--")
 const persona = {
     nombre: "Juan",
     saludo: function() {
@@ -257,6 +259,8 @@ const activeFunction = persona.saludo.bind(persona)
 activeFunction()
 
 /* call - apply */
+console.log("--call--")
+console.log("--apply--")
 function presentarse(age, city) {
     console.log(`Hola, soy ${this.nombre}, tengo ${age} años y vivo en ${city}`)
 }
@@ -267,7 +271,6 @@ presentarse.apply(persona2, [30, "Barcelona"])
 
 /* setTimeout */
 console.log("--setTimeout--")
-
 const temp3sec = setTimeout(() => {
     console.log("Esto se ejecuta despues de 3 segundos")
 }, 3000);
@@ -294,39 +297,48 @@ console.log("---------------Strings---------------")
 
 const textString = "     mundo     "
 
-/* .toLowerCase and .toUpperCase */
+/* .toLowerCase */
+console.log("--toLowerCase--")
 console.log(textString.toLowerCase())
+
+/* .toUpperCase */
+console.log("--toUpperCase--")
 console.log(textString.toUpperCase())
 
 /* .includes */
+console.log("--includes--")
 console.log(textString.includes("mundo"))
 console.log(textString.includes("String"))
 
 /* .trim */
+console.log("--trim--")
 console.log(textString.trim())
 console.log(textString.trimStart())
 console.log(textString.trimEnd())
 
 /* .repeat */
+console.log("--repeat--")
 console.log(textString.repeat(5))
 
 /* .padStart */
+console.log("--padStart--")
 const textString2 = "Texto"
 console.log(textString2.padStart(15, "Principio "))
 console.log(textString2.padEnd(8, " Fin"))
 
-
-console.log("--Manipulacion de cadenas--")
 /* .slice */
+console.log("--slice--")
 const cadenaText = "Esta es una cadena de texto"
 console.log(cadenaText.slice(0, 11))
 console.log(cadenaText.slice(-15))
 
 /* .replace */
+console.log("--replace--")
 console.log(cadenaText.replace("Esta", "This"))
 console.log(cadenaText.replace("Esta es una cadena de texto", "This is a caden of text"))
 
 /* .split */
+console.log("--split--")
 const cadenaText3 = "Esta es una cadena de texto"
 const cadenaText4 = "Esta,es,una,cadena,de,texto"
 console.log(cadenaText3.split(" "))
@@ -432,20 +444,25 @@ const rellen = [0, 0, 0, 0, 0, 0, 0]
 const re = rellen.fill("fill", 1, 4)
 console.log(re)
 
+/* filter */
+console.log("--filter--")
+const numeros2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const pares = numeros2.filter(num => num % 2 === 0)
+console.log(pares)
 
 console.log("--Metodo de busca---")
 
 /* indexOf */
 console.log("--indexOf--")
-const indValue = [1, 2, 3, 4, 5]
-const va = indValue.indexOf(3, 1)
+const indValue = [1, 2, "busca este", 4, 5]
+const va = indValue.indexOf("busca este", 1)
 console.log(va)
 
 /* has */
 console.log("--has--")
 const conjunto = new Set([1, 2, 3])
-console.log(conjunto.has(2))
-console.log(conjunto.has(4))
+console.log(conjunto.has(2), "Este si esta")
+console.log(conjunto.has(4), "Este no esta")
 
 const mapa = new Map();
 mapa.set("nombre", "Carlos");
@@ -474,7 +491,16 @@ console.log(dupplicados)
 /* forEach */
 console.log("--forEach--")
 const frutipipa = ["salpichicha", "sandihuana", "piñahuana", "manguana"]
+//1
 frutipipa.forEach(frtA => console.log(frtA))
+//2
+frutipipa.forEach(frtA2 => {
+    console.log(frtA2)
+})
+//3
+for (let e of frutipipa) {
+    console.log(e);
+}
 
 /* from */
 console.log("--from--")
@@ -499,3 +525,190 @@ console.log(`tamaño con map: ${maap.size}`)
 
 const tamañOSizE = new Set([1, 2, 3])
 console.log(`tamaño con set: ${tamañOSizE.size}`)
+
+
+
+console.log("---------------OBJECTS---------------")
+
+/* assign */
+console.log("--assign--")
+const primero = { a: 1 }
+const segundo = { b: 2, c: 3 }
+const combinacion = Object.assign(primero, segundo)
+
+console.log(combinacion)
+
+/* freeze */
+console.log("--freeze--")
+const people = { nombre: "Ana", edad: 20 }
+Object.freeze(people)
+
+people.nombre = "Luis"  // No cambia
+people.edad = 30        // No cambia
+
+console.log(people)
+
+/* seal */
+console.log("--seal--")
+const user1 = { nombre: "Luis" }
+Object.seal(user1)
+
+user1.nombre = "Pedro"
+user1.edad = 25
+
+console.log(user1)
+
+/* fromEntries */
+console.log("--fromEntries--")
+const cambioArray = [["a", 1], ["b", 2], ["c", 3]]
+console.log(Object.fromEntries(cambioArray))
+
+/* keys */
+console.log("--keys--")
+const car = { marca: "Nissan", modelo: "GTR R34"}
+console.log(Object.keys(car))
+
+/* values */
+console.log("--values--")
+console.log(Object.values(car))
+
+/* entries */
+console.log("--entries--")
+console.log(Object.entries(car))
+
+
+
+console.log("---------------CALCULAR---------------")
+
+/* Math.floor */
+console.log("--Math.floor--")
+console.log(Math.floor(45.99)) // 45
+
+/* Math.ceil(x) */
+console.log("--Math.ceil(x)--")
+console.log(Math.ceil(45.01)) // 46
+
+/* Math.round(x) */
+console.log("--Math.round(x)--")
+console.log(Math.round(45.49)) // 45
+
+/* Math.trunc(x) */
+console.log("--Math.trunc(x)--")
+console.log(Math.trunc(4.9)) // 4
+
+/* Math.random */
+console.log("--Math.random--")
+console.log(Math.random() * 10)
+
+/* Math.sqrt(x) */
+console.log("--Math.sqrt(x)--")
+console.log(Math.sqrt(16)) // 4
+console.log(Math.sqrt(25)) // 5
+
+/* Math.abs(x) */
+console.log("--Math.abs(x)--")
+console.log(Math.abs(-10)) // 10
+console.log(Math.abs(10)) // 10
+console.log(Math.abs(-0.5)) // 0.5
+
+/* Math.sign(x) */
+console.log("--Math.sign(x)--")
+console.log(Math.sign(-5)) // -1
+console.log(Math.sign(0)) // 0
+console.log(Math.sign(5)) // 1
+
+/* Math.min(x, y, ...) */
+console.log("--Math.min(x, y, ...)--")
+console.log(Math.min(1, 20, 30, 40, 5, 11, 0.1)) // 0.1
+console.log(Math.min(1, 20, 30, 40, -5, 11)) // -5
+console.log(Math.min(1, 20, 30, 40, -5, 11, -100)) // -100
+
+/* Math.max(x, y, ...) */
+console.log("--Math.max(x, y, ...)--")
+console.log(Math.max(100, 200, 300, 400, 555, 110, 1)) // 40
+
+
+
+console.log("---------------ALERTAS---------------")
+
+/* alert */
+console.log("--alert--")
+// alert("Hola, soy un alert")
+
+/* prompt */
+console.log("--prompt--")
+// const nombre = prompt("¿Cuál es tu nombre?")
+// console.log(`Hola ${nombre}`)
+
+/* confirm */
+console.log("--confirm--")
+// const respuesta = confirm("¿Quieres continuar?")
+// console.log(respuesta ? "Continuar" : "Cancelar")
+// if (respuesta) {
+//     console.log("Continuar")
+// } else {
+//     console.log("Cancelar")
+// }
+
+/* open */
+console.log("--open--")
+// window.open("https://www.google.com", "_blank", "width=800,height=600")
+
+/* close */
+console.log("--close--")
+// window.close()
+// window.open("https://www.google.com", "_blank", "width=800,height=600")
+// window.close()
+
+/* location */
+console.log("--location--")
+// console.log(window.location) // URL actual
+// console.log(window.location.reload()) // Recargar la página actual
+// console.log(window.location.assign("https://www.google.com")) // Redirigir a otra página
+
+/* innerWidth */
+console.log("--innerWidth--")
+// console.log(window.innerWidth) // Ancho de la ventana
+
+/* innerHeight */
+console.log("--innerHeight--")
+// console.log(window.innerHeight) // Alto de la ventana
+
+/* scrollTo */
+console.log("--scrollTo--")
+// window.scrollTo(0, 500) // Desplazar a una posición específica (x, y)
+
+
+
+console.log("---------------CONSOLE---------------")
+
+/* dir */
+console.log("--dir--")
+console.dir({ nombre: "Carlos", edad: 30 })
+
+/* warn */
+console.log("--warn--")
+console.warn("Esto es una advertencia")
+
+/* error */
+console.log("--error--")
+console.error("Esto es un error")
+
+/* info */
+console.log("--info--")
+console.info("Esto es un mensaje informativo")
+
+/* table */
+console.log("--table--")
+const data = [
+    { nombre: "Juan", edad: 25 },
+    { nombre: "Ana", edad: 30 },
+    { nombre: "Pedro", edad: 35 }
+]
+console.table(data)
+
+/* debug */
+console.log("--debug--")
+console.debug("Esto es un mensaje de depuración")
+console.debug("Esto es otro mensaje de depuración")
+console.debug("Esto es un tercer mensaje de depuración")

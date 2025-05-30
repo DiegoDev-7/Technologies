@@ -2,7 +2,7 @@
 
     ---------------Importaciones---------------
 
-        import React from 'react';                                  (Se importa la libreria de React para poder usarla en el componente JSX).
+        import React from 'react';                                  (Se importa la libreria de React para poder usarla en el componente JSX (ya no es necesario)).
 
         import React, { useState } from 'react';                    (Permite manejar y actualizar el estado en componentes funcionales de JSX de forma reactiva.).
 
