@@ -1,0 +1,112 @@
+/*
+
+    Import Variables or Mixin
+
+    @use "../basic.scss";
+    a {
+        @include textos(red, lightyellow, 10px, 10px, 50px);
+    }
+
+*/
+/* 
+
+    sass --watch rutaParaGuardar.scss rutaParaLeer.css           (Siempre ejecutamos este comando para poder guardar los archivos .scss a .css, siempre vamos a necesitar guardarlos).
+
+*/
+body {
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+  color: brown;
+  border: solid;
+}
+
+body .este {
+  font-size: 20px;
+}
+
+body {
+  background-color: lightyellow;
+  color: #000;
+  font-size: 30px;
+}
+
+p {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 80px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  text-decoration: none;
+}
+nav li a {
+  color: red;
+}
+
+.container h2 {
+  font-size: 50px;
+  color: green;
+}
+.container p {
+  font-size: 20px;
+  color: black;
+}
+
+.containerLst .txt {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  font-family: Arial;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.uno p {
+  color: red;
+  background-color: lightyellow;
+  font-size: 10px;
+  margin: 10px;
+  padding: 50px;
+}
+
+h4 {
+  color: blue;
+  background-color: lightgray;
+  font-size: 20px;
+  margin: 20px;
+  padding: 70px;
+}
+
+.btnTxt {
+  font-size: 20px;
+}
+
+.button, .rojo, .amarillo, .verde {
+  border: none;
+  padding: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 10px black;
+}
+
+.verde {
+  background: green;
+}
+
+.amarillo {
+  background: yellow;
+}
+
+.rojo {
+  background: red;
+}
+
+/*# sourceMappingURL=main.css.map */

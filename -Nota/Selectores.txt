@@ -11,9 +11,9 @@
                 gráfica de más de 30em de ancho. Si el navegador es más ancho que 30em, el color de fondo será azul.
 
             @media (min-width: 140em) {             
-            background-color: blue;                 
-            body {
-            }
+                background-color: blue;                 
+                body {
+                }
             }
 
             

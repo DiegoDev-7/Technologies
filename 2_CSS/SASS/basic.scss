@@ -1,0 +1,172 @@
+/* 
+
+    sass --watch rutaParaGuardar.scss rutaParaLeer.css           (Siempre ejecutamos este comando para poder guardar los archivos .scss a .css, siempre vamos a necesitar guardarlos).
+
+*/
+
+
+body {
+    width: 250px;
+    height: 250px;
+    background-color: lightblue;
+    color: brown;
+    border: solid;
+}
+
+body {
+    .este {
+        font-size: 20px;
+    }
+}
+
+
+// Variables
+$usuario: 30vw;
+$numero: 30px;
+$secounds: 30s;
+
+// String
+$string: "s";
+$string2: none;
+
+$color: yellow;
+$color2: #000;
+$color3: rgb(255, 0, 0);
+$color: lightyellow;
+
+// Boolean
+$booleano1: true;
+$booleano2: false;
+
+// Objecto
+$map: (
+    primer: black,
+    segundo: 30s
+);
+
+// Mostrar variables en consola
+@debug $usuario + 10;
+@debug $numero;
+@debug $secounds;
+
+@debug $string;
+@debug $string2;
+
+@debug $color;
+@debug $color2;
+@debug $color3;
+
+@debug $booleano1;
+@debug $booleano2;
+
+@debug $map;
+
+body {
+    background-color: $color;
+    color: $color2;
+    font-size: $numero;
+}
+
+p {
+    $numero: 80px !global;
+    font-size: $numero;
+}
+h3 {
+    font-size: $numero;
+}
+
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        text-decoration: $string2;
+
+        a {
+            color: red;
+        }
+    }
+}
+
+.container {
+    h2 {
+        font-size: 50px;
+        color: green;
+    }
+    p {
+        font-size: 20px;
+        color: black;
+    }
+}
+
+
+.containerLst {
+    .txt {
+        text-decoration: none;
+        background: #000;
+        color: #fff;
+
+        font: {
+            family: Arial;
+            weight: 100;
+            size: 30px;
+        }
+    }
+}
+
+
+// Mixin
+@mixin textos ($colo, $background, $size, $margin, $padding) {
+    color: $colo; 
+    background-color: $background;
+    font-size: $size;
+    margin: $margin;
+    padding: $padding;
+}
+@mixin textResponsive {
+    @media screen and (min-width: 800px) {
+        color: pink;
+        background: cornflowerblue;
+        font-size: 1.2em;
+    }
+}
+
+.uno {
+    p {
+        @include textos(red, lightyellow, 10px, 10px, 50px);
+    }
+}
+
+h4 {
+    @include textos(blue, lightgray, 20px, 20px, 70px)
+}
+
+
+
+.btnTxt {
+    font-size: 20px; 
+}
+.button {
+    border: none;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px black;
+
+}
+
+.verde {
+    @extend .button;
+    background: green;
+}
+.amarillo {
+    @extend .button;
+    background: yellow;
+}
+.rojo {
+    @extend .button;
+    background: red;
+}

@@ -1,0 +1,12 @@
+/*
+
+    Import Variables or Mixin
+
+    @use "../basic.scss";
+    a {
+        @include textos(red, lightyellow, 10px, 10px, 50px);
+    }
+
+*/
+
+@use "../basic.scss";

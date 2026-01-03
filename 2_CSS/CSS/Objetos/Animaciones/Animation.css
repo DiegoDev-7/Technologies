@@ -1,0 +1,160 @@
+body {
+    background-color: black;
+}
+.box {
+    /* Tamaño y borde del contenedor */
+    width: 300px;
+    height: 300px;
+    border: solid white;
+
+    /* Centrar el elemento en la pantalla */
+    position: absolute;
+    top: 50%; 
+    box-sizing: border-box;
+    transform: translate(-50%, -50%); 
+
+    /* Animación principal */
+    /* Configuración de la animación "change-color" */
+    animation-name: change-color;          /* Nombre de la animación */
+    animation-duration: 60s;               /* Duración total de la animación */
+    animation-timing-function: infinite;   /* La animación es infinita */
+    animation-iteration-count: 1;          /* Número de repeticiones de la animación */
+    animation-delay: 2s;                   /* Retardo de 2 segundos antes de iniciar la animación */
+    animation-fill-mode: both;             /* La animación mantiene estilos antes y después de ejecutarse */
+    animation-direction: reverse;          /* La animación se ejecuta en sentido inverso */
+    animation-play-state: running;         /* La animación está en ejecución */
+    animation-fill-mode: backwards;        /* La animación aplica el primer estado antes de comenzar */
+    
+    /* Redefinición de animación: una sola línea para la animación "change-color" */
+    animation: change-color 5s infinite both reverse;
+
+    /* Transición para cambio suave en algunas propiedades al hacer hover */
+    transition: background-color 2s, width 2s, height 2s, rotate 0.5s, box-shadow 5s;
+    transition: 0.5s; /* Otra forma de establecer una duración general de transición */
+
+    /* Animaciones múltiples: "change-color" y "move-box" se ejecutan de manera simultánea */
+    animation: change-color 5s infinite normal, move-box 5s infinite normal;
+}
+
+.box:hover {
+    width: 325px;
+    height: 325px;
+    border-radius: 0%;
+    box-shadow: 0px 0px 50px 3px black;
+    background-color: red;
+}
+
+/* 
+    Animación "change-color": cambia el color de fondo, tamaño y borde del elemento 
+
+    Segun el porcentaje depedera de el tiempo de la animacion.
+*/
+@keyframes change-color {
+    0%, 100% {
+        background: indigo;
+    }
+    15% {
+        background: purple;
+        width: 325px;
+        height: 325px;
+        border-radius: 0%;
+    }
+    25% {
+        background: lightpink;
+        width: 350px;
+        height: 350px;
+        border-radius: 0%;
+    }
+    35% {
+        background: red;
+        width: 400px;
+        height: 400px;
+    }
+    45% {
+        background: brown;
+        width: 450px;
+        height: 450px;
+    }
+    55% {
+        background: lightcoral;
+        width: 500px;
+        height: 500px;
+    }
+    65% {
+        background: lightblue;
+        width: 550px;
+        height: 550px;
+    }
+    75% {
+        background: blue;
+        width: 600px;
+        height: 600px;
+    }
+    85% {
+        background: white;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+    }
+}
+
+/* Animación "move-box": mueve el elemento en dirección horizontal */
+@keyframes move-box {
+    0% {
+        transform: translateX(0);      /* Sin desplazamiento horizontal al inicio */
+    }
+    100% {
+        transform: translateX(200px);  /* Desplazado 200px a la derecha al final */
+    }
+}
+
+
+/* Las 3 bolitas de arriba */
+.Rectangulo2 {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Adentro2 {
+    width: 50px;
+    height: 50px;
+    border: solid white;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+.Adentro22::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+    
+    animation: pulse;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        scale: 2;
+        opacity: .4;
+    }
+    100% {
+        opacity: .6;
+    }
+}

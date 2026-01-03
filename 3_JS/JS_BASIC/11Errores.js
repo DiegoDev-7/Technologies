@@ -119,7 +119,7 @@ console.error(e.message); // "No se puede dividir entre cero"
 //TypeError: Personaliza errores en la consola
 function verificarTipo(valor) {
     if (typeof valor !== "string") {
-      throw new TypeError("El valor debe ser una cadena de texto. HIJUEPUTA");
+      throw new TypeError("El valor debe ser una cadena de texto.");
     }
     return valor.toUpperCase();
   }
