@@ -1,5 +1,9 @@
 <!-- 
 
+    sudo dpkg -i name.deb                       (Permite instalar cualquier aplicacion .deb en SO).
+
+    sudo apt install name                       (Permite instalar cualquier programa de algún repositorio).
+
     ----------BASIC COMANDS----------
 
         clear                                   (Limpia el terminal o el bash).
