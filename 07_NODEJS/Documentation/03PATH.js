@@ -1,6 +1,6 @@
 /*
 
-        node:Path               (Funciona para trabajar con rutas de archivos, directorios y manipular rutas).
+        node:Path                       (Funciona para trabajar con rutas de archivos, directorios y manipular rutas).
         
         
         ---------------Propiedades---------------

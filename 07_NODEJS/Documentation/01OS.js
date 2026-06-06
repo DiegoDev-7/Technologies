@@ -1,6 +1,6 @@
 /* 
 
-    node:os                         (Funciona principal mente para obtener informacion sobre el entorno en el que se ejecuta la aplicacion mostrando todos los datos como la CPU, memoria, SO etc...).
+    node:os                                 (Funciona principal mente para obtener informacion sobre el entorno en el que se ejecuta la aplicacion mostrando todos los datos como la CPU, memoria, SO etc...).
 
 
     ---------------Propiedades---------------

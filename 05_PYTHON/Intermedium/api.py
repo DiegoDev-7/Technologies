@@ -2,42 +2,42 @@
 
   =====APIs=====
 
-    import request            (Permite hacer peticiones a una api (url) con diferentes tipos de metodos).
+    import request                (Permite hacer peticiones a una api (url) con diferentes tipos de metodos).
 
 
     -----Methods-----
 
-      .get                  (Permite obtener los datos de la url).
+      .get                        (Permite obtener los datos de la url).
 
-      .post                 (Permite crear nuevos datos de una url).
+      .post                       (Permite crear nuevos datos de una url).
 
-      .put                  (Permite actualizar los datos de una url).
+      .put                        (Permite actualizar los datos de una url).
 
-      .patch                (Permite modificar campos especificos de una url sin enviar el objeto completo).
+      .patch                      (Permite modificar campos especificos de una url sin enviar el objeto completo).
 
-      .delete               (Permite eliminar datos de una url).
+      .delete                     (Permite eliminar datos de una url).
 
-      .json                 (Permite obtener un formato json (Diccionario con claves y valores) de la url a la que estamos llamando).
+      .json                       (Permite obtener un formato json (Diccionario con claves y valores) de la url a la que estamos llamando).
 
   
-    .status_code            (Permite acceder al codigo de estado usando variable.status_code).
+    .status_code                  (Permite acceder al codigo de estado usando variable.status_code).
       
-    headers                 (Permite enviar metadatos adicionales en la petición HTTP).
+    headers                       (Permite enviar metadatos adicionales en la petición HTTP).
 
-    params                  (Permite enviar datos en la URL sin construila manualmente. Es la forma correcta de trabajar con query parameters en request).
+    params                        (Permite enviar datos en la URL sin construila manualmente. Es la forma correcta de trabajar con query parameters en request).
 
-    json                    (Funciona para enviar datos en formato JSON en el cuerpo de la petición).
+    json                          (Funciona para enviar datos en formato JSON en el cuerpo de la petición).
 
 
     -----Parameters-----
 
       http://miurl_random52cdas4.com/api/languaje?popularity=high&limit=1
 
-      ?                     (Es un parametro de consulta. Funciona para ordenar o modificar la respuesta sin cambiar el recurso base).
+      ?                           (Es un parametro de consulta. Funciona para ordenar o modificar la respuesta sin cambiar el recurso base).
 
-      =                     (Es un par clave=valor).
+      =                           (Es un par clave=valor).
 
-      &                     (Permite encadenar multiples parámetros de consulta juntos separándolos con un &).
+      &                           (Permite encadenar multiples parámetros de consulta juntos separándolos con un &).
 
 
     -----Status codes-----

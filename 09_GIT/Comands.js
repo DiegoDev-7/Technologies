@@ -2,19 +2,19 @@
 
     -----COMANDOS DEL SISTEMA DE ARCHIVOS-----
 
-        mkdir                                                           (Crea una carpeta).
+        mkdir                                                               (Crea una carpeta).
 
-        New-Item                                                        (Añade una hoja).
+        New-Item                                                            (Añade una hoja).
 
-        Rename-Item                                                     (Renombra una hoja o carpeta / "Rename-Item nombre-actual nombre-nuevo").
+        Rename-Item                                                         (Renombra una hoja o carpeta / "Rename-Item nombre-actual nombre-nuevo").
     
-        Remove-Item                                                     (Elimina un archivo).
+        Remove-Item                                                         (Elimina un archivo).
 
-        ls                                                              (Muestra todas las carpetas disponibles para acceder a ellas).
+        ls                                                                  (Muestra todas las carpetas disponibles para acceder a ellas).
 
-        pwd                                                             (Muestra la carpeta en la que estamos posicionados).
+        pwd                                                                 (Muestra la carpeta en la que estamos posicionados).
 
-        clear                                                           (Limpia la consola).
+        clear                                                               (Limpia la consola).
 
 
     ---------------GIT---------------

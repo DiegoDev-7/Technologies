@@ -1,6 +1,6 @@
 /* 
 
-    node:http                           (Funciona para crear servidores HTTP(Hypertext Transfer Protocol) y realizar solicitudes HTTP como cliente. Podemos manejar la comunicacion entre clientes y servidores).
+    node:http                               (Funciona para crear servidores HTTP(Hypertext Transfer Protocol) y realizar solicitudes HTTP como cliente. Podemos manejar la comunicacion entre clientes y servidores).
 
 
     ---------------Propiedades---------------

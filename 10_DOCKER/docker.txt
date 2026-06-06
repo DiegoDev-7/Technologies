@@ -5,13 +5,13 @@ https://hub.docker.com
 
 	-----Download Images-----
 
-		docker images										(Muestra las imagenes descargadas).
+		docker images																			(Muestra las imagenes descargadas).
 
-		docker pull name									(Instala una imagen).
+		docker pull name																	(Instala una imagen).
 
-		docker pull name:version							(Instala una imagen con una version especifica).
+		docker pull name:version													(Instala una imagen con una version especifica).
 
-		docker image rm name:version						(Elimina una imagen con su version).
+		docker image rm name:version											(Elimina una imagen con su version).
 
 
 
@@ -20,39 +20,39 @@ https://hub.docker.com
 
 		---Create Container---
 
-		docker create name									(Crea un contenedor de una imagen (Hay que tener una imagen descargada*)).
+		docker create name																(Crea un contenedor de una imagen (Hay que tener una imagen descargada*)).
 
-		docker create --name monguito mongo					(Permite crear un contenedor con el nombre que nosotros le quisieramos asignar y la imagen).
+		docker create --name monguito mongo								(Permite crear un contenedor con el nombre que nosotros le quisieramos asignar y la imagen).
 
 		docker create -p27017:27017 --name monguito mongo	(Permite crear un Puerto Host y un Puerto Contenedor (No es necesario añadir el primer 27017)).
 
 
 		---Start Container---
 
-		docker start NAME or ID								(Inicia el contenedor con la id).
+		docker start NAME or ID														(Inicia el contenedor con la id).
 
-		docker ps											(Muesta los contenedores corriendo).
+		docker ps																					(Muesta los contenedores corriendo).
 
-		docker ps -a										(Muestra todos los contenedores (Incluye los que no estan corriendo)).
+		docker ps -a																			(Muestra todos los contenedores (Incluye los que no estan corriendo)).
 
-		docker stop id										(Detiene el conteendor).
+		docker stop id																		(Detiene el conteendor).
 
-		docker rm NAME or ID								(Permite eliminar un contenedor con el nombre o el id).
+		docker rm NAME or ID															(Permite eliminar un contenedor con el nombre o el id).
 
 
 		---Logs---
 
-		docker logs NAME or ID								(Permite mostrar los logs de un contenedor).
+		docker logs NAME or ID														(Permite mostrar los logs de un contenedor).
 
-		docker logs --follow NAME or ID						(Permite mostrar los logs de un contenedor y quedarse escuchando a nuevos logs (El contenedor tiene que estar running)).
+		docker logs --follow NAME or ID										(Permite mostrar los logs de un contenedor y quedarse escuchando a nuevos logs (El contenedor tiene que estar running)).
 
 
 
 	-----Easy Start Container-----
 
-		docker run name										(Busca la imagen, si no la encuentra la descarga y crea un contenedor y muestra los logs (No arranca el contenedor)).
+		docker run name																		(Busca la imagen, si no la encuentra la descarga y crea un contenedor y muestra los logs (No arranca el contenedor)).
 
-		docker run -d name									(Busca la imagen, si no la encuentra la descarga y crea un contenedor, no muestra los logs y arranca el contenedor).
+		docker run -d name																(Busca la imagen, si no la encuentra la descarga y crea un contenedor, no muestra los logs y arranca el contenedor).
 
 		docker run --name monguito -p27017:27017 -d mongo	(Busca la imagen, si no la encuentra la descarga y crea un contenedor, no muestra los logs y arranca el contenedor con el puerto especificado y el nombre asignado).
 
