@@ -1,0 +1,45 @@
+# Services                  (Cada servicio es un contenedor).
+# Build                     (Construye desde el Dockerfile).
+# image                     (Usa una imagen ya existente).
+# container_name            (Nombre del contenedor).
+# ports                     (Mapeo de puertos).
+# environment               (Variables de entorno).
+# env_file                  (Archivo con variables de entorno).
+# depends_on                (Dependencias entre servicios - Espera que otros servicios inicien).
+# restart                   (Política de reinicio del contenedor).
+# command                   (Comando a ejecutar al iniciar el contenedor).
+# working_dir               (Directorio de trabajo dentro del contenedor).
+
+
+version: '3.9'                    # Versión del formato (ya no es muy importante)
+
+services:                         # Aquí se definen los contenedores
+
+  mi-app:                         # Nombre del servicio
+    build: .                      # Construye desde el Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    # env_file: .env              # Carga todas las variables de entorno del .env
+    depends_on:
+      - postgres
+
+  postgres:                       # Otro servicio (base de datos)
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: midb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+networks:                         # Se utiliza para unirnos a una red
+  default:
+    external: true
+    name: shared-network          # Se utiliza para conectarse a la red
+
+volumes:                          # Volúmenes persistentes
+  postgres_data:

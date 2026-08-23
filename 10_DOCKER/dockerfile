@@ -1,9 +1,33 @@
-FROM node:22.16
+# Imagen base
+FROM node:22
 
-RUN mkdir -p /home/app
+# Establecer el directorio de trabajo
+WORKDIR /app
 
-COPY . /home/app
+# Copiar los archivos de configuración de la aplicación al contenedor
+COPY package*.json ./
 
+# Instalar las dependencias de la aplicación
+RUN npm ci --only=production
+
+# Copiar los archivos de la aplicación al contenedor (doble punto para copiar todo el contenido del directorio actual)
+COPY . .
+
+# Exponer el puerto en el que la aplicación se ejecutará
 EXPOSE 3000
 
-CMD ["node", "/home/app/index.js"]
+# Define las variables de entorno necesarias para la aplicación
+ENV NODE_ENV=production \ 
+    PORT=3000 \
+    APP_NAME=MiAplicacion \
+    APP_VERSION=v1
+
+ENV API_URL=https://api.miapp.com
+ENV DB_HOST=localhost
+    
+
+# Cambiar al usuario no root para mayor seguridad
+USER node
+
+# Comando para ejecutar la aplicación
+CMD ["npm", "start"]

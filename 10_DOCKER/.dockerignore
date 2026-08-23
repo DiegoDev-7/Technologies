@@ -1,0 +1,22 @@
+# Esto evita copiar archivos y directorios innecesarios al contenedor de Docker, lo que ayuda a la imagen a ser mas ligera y mejorar la seguridad.
+# node_modules
+
+# npm-debug.log
+
+# Dockerfile
+
+# .dockerignore
+# .git
+# .gitignore
+
+# README.md
+
+# .env
+# .env.*
+# .nyc_output
+
+# coverage
+# dist
+# build
+
+# *.log

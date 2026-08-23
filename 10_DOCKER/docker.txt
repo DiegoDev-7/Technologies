@@ -1,6 +1,10 @@
-Para descargar imagenes entrar a:
 
-https://hub.docker.com
+	Para descargar imagenes entrar a:
+
+	https://hub.docker.com
+
+
+	docker init 																				(Inicia el proyecto con algunos comandos predeterminados).
 
 
 	-----Download Images-----
@@ -28,6 +32,8 @@ https://hub.docker.com
 
 
 		---Start Container---
+
+		docker build -t name:tag .												(Permite crear una imagen de Docker y asignarle un nombre y una etiqueta especificos al mismo tiempo y con el "." para incluir nuestro proyecto).
 
 		docker start NAME or ID														(Inicia el contenedor con la id).
 
@@ -57,15 +63,54 @@ https://hub.docker.com
 		docker run --name monguito -p27017:27017 -d mongo	(Busca la imagen, si no la encuentra la descarga y crea un contenedor, no muestra los logs y arranca el contenedor con el puerto especificado y el nombre asignado).
 
 
+		-----ENV-----
+
+    -e 																								(Se utiliza para incluir las variables de entorno).
+
+		--env-file .env 																	(Se utiliza para incluir el archivo .env de las variables de entorno a el correr el contenedor).
+
 
 	-----Network-----
 
-		docker network ls									
+		docker network ls																	(Muestra todas las redes disponibles en el sistema Docker).
 
-		docker network create name							
+		docker network inspect [name]  										(Muestra toda la informacion detallada de una red especifica de Docker).
 
-		docker network rm name								
+		docker network create [name]											(Permite crear una nueva red).
 
-		docker build -t name:tag							
+		docker network rm name														(Permite eliminar una red).			
 
-		docker create -p(Ports) --name NAME --network NAME name:tag
+		docker create -p HOST_PORT:CONTAINER_PORT --name CONTAINER_NAME --network MI_RED name_image:tag 
+		
+																											(Permite crear un contenedor asignarle un puerto al contenedor, asignarle un nombre ).
+
+
+	-----Compose-----
+
+		Tenemos que tener 1 archivo obligatorio para armar nuestro proyecto el cual es dockerfile; Este archivo lo que nos permitira hacer es construir, 
+		manipular y decidir que queremos que se ejecute en nuestro contenedor.
+
+
+		-----Files-----
+
+		docker-compose.yml																(Permite definir los servicios del proyecto, db, puertos, variables etc; Es el que orquesta los contenedores).
+
+		dockerfile																				(Este archivo le permite decir a Docker como tiene que construir la imagen de nuestra app).
+
+
+		docker compose up																	(Permite levantar la aplicacion).
+
+		docker compose -f file.dev up											(Permite levantar una aplicacion pero con otro archivo totalmente diferente al docker-compose.yml).
+	
+		docker compose down																(Permite apagar y limpiar todo lo que se levanto en la aplicacion).
+
+		docker compose logs -f														(Permite ver los logs).
+
+
+	-----System-----
+
+		docker system df 																	(Nos muestra todos los archivos, volumenes, imagenes y contenedores que tenemos en docker con su almacenamiento y estadisticas adicionales).
+
+		docker system prune 															(Borra todos los contenedores).
+
+		docker system prune -a 														(Borra todas las imagenes).
